@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), URL("https://lms.grandcircus.co/pluginfile.php/9438/mod_resource/content/0/background.jpg");
+    background-size: 100%;
+    font-family: 'Maven Pro', sans-serif;
+}
+main, form {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+form {
+    background-color:  rgb(179,178,176, 0.6);
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+form, input, button, .contact_cards {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input {
+    background-color: #fff;
+}
+
+input, button {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 10px;
+}
+
+.contact_container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.contact_cards {
+    background-color: rgba(255,255,255,0.8);
+    margin: 5px;
+}
