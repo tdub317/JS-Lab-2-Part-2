@@ -72,13 +72,11 @@ main.addEventListener("click", function (event) {
     // book.add(new Contact(info_input[0].value, info_input[1].value, info_input[2].value, info_input[3].value));
     book.add(new Contact(inputElements[0].value, inputElements[1].value, inputElements[2].value, inputElements[3].value));
     // clears values in the input after submitting
-    // for (let input of inputElements) {
-    //   input.value = "";
-    // }
     // BONUS make sure last input is not targeted
-
-
-
+    for (let input of inputElements) {
+      input.value = "";
+      input.blur();
+    }
     // console.log(document.querySelector("section.contact_container"));
     // console.log(event.target.attributes[1].ownerElement.offsetParent.firstElementChild.childNodes[3].childNodes[0], event.target.attributes[1].ownerElement.offsetParent.firstElementChild.childNodes[3].childNodes[1]);
     book.display();
