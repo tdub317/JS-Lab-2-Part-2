@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,18 +15,17 @@
   <main>
     <form>
       <h2>My Contacts</h2>
-      <!-- <label>Name: </label> -->
-      <input type="text" placeholder="Name">
-      <!-- <label>Email: </label> -->
-      <input type="text" placeholder="Email">
-      <!-- <label>Phone Number: </label> -->
-      <input type="text" placeholder="Phone Number">
-      <!-- <label>Relation: </label> -->
-      <input type="text" placeholder="Relation">
-      <button class="add_btn" type="button">Add</button>
+      <!-- <label for="name"></label> -->
+      <input id="name" type="text" placeholder="Name">
+      <!-- <label for="email">Email: </label> -->
+      <input id="email" type="text" placeholder="Email">
+      <!-- <label for="phone">Phone Number: </label> -->
+      <input id="phone" type="text" placeholder="Phone Number">
+      <!-- <label for="relation">Relation: </label> -->
+      <input id="relation" type="text" placeholder="Relation">
+      <button class="add_btn">Add</button>
     </form>
     <section class="contact_container"></section>
-    </section>
   </main>
   <script src="script.js"></script>
 </body>
