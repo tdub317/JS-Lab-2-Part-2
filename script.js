@@ -20,10 +20,13 @@ class AddressBook {
     this.contacts = [...this.contacts, { ...info }];
   }
   deleteAt(index) {
-    this.contacts.splice(index, 1);
+    // console.log(typeof index);
+    // this.contacts.splice(index, 1);
     // const index = this.contacts.findIndex(info => info.name === name);
     // !!!!!!!if using slice it'll delete everything after index WHY??
-    // this.contacts = [...this.contacts.slice(0, index), ...this.contacts.slice(index + 1)];
+
+    // arg was string and index needed to be number
+    this.contacts = [...this.contacts.slice(0, Number(index)), ...this.contacts.slice(Number(index) + 1)];
   }
   // print() {
   //   for (let i = 0; i < this.contacts.length; i++) {
